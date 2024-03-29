@@ -40,7 +40,7 @@ export default function Header({}: Props) {
       <div className="flex h-16 items-center px-5 md:px-16">
         <div className="mx-auto max-w-full w-full space-y-20">
           <div className="flex items-center justify-between gap-2">
-            <div className="flex flex-1 items-center justify-start">
+            <div className="flex items-center justify-start">
               <button type="button" onClick={toggleMenu}>
                 <HiOutlineMenuAlt3 className="block md:hidden" size={20} />
               </button>
@@ -80,11 +80,11 @@ export default function Header({}: Props) {
 
             <div className="flex items-center justify-end">
               <nav className="flex items-center justify-between gap-1">
-                <div className="relative bg-transparent h-full ">
+                <div className="relative bg-transparent h-full">
                   <input
                     type="search"
                     placeholder="Search documentation"
-                    className="rounded-lg border-slate-300/50 py-1 px-4 placeholder:text-sm placeholder:dark:bg-black dark:bg-black " 
+                    className="rounded-lg border-slate-300/50 py-1 px-4 placeholder:text-sm placeholder:dark:bg-black dark:bg-black w-full" 
                     name="search"
                     id="search"
                   />
